@@ -1,35 +1,70 @@
-Financial Fraud Detection using Mahalanobis Distance and EWMA
+Statistical Fraud Detection using Mahalanobis Distance and EWMA
 
-📌 Project Overview
+📌 Overview
 
-This project implements a statistical fraud detection system that identifies suspicious financial transactions using anomaly detection techniques.
+This project presents a statistical fraud detection model for financial transactions using Mahalanobis Distance and Exponentially Weighted Moving Average (EWMA). The model detects both global anomalies and behavioral changes in user transactions.
 
-⚙️ Techniques Used
+🚨 Problem Statement
 
-- Mahalanobis Distance (global anomaly detection)
-- EWMA (behavior tracking)
-- Risk scoring system
+Traditional fraud detection systems rely on rule-based or machine learning approaches, which often lack interpretability and require labeled data. This project aims to develop an explainable statistical model to detect suspicious transactions.
 
-📊 Features
+⚙️ Methodology
 
-- Detects unusual transaction patterns
-- Tracks user behavior over time
-- Assigns risk scores (Low, Medium, High)
-- Interactive account-level analysis
+1. Mahalanobis Distance
 
-📁 Files in Repository
+Used to detect multivariate anomalies in transaction data.
 
-- "fraud_detection.ipynb" → main implementation
-- "financial_fraud_synthetic.csv" → dataset
-- "report.pdf" → project report
-- "presentation.pptx" → PPT
+2. EWMA (Exponentially Weighted Moving Average)
 
-🚀 How to Run
+Used to track recent behavior and detect sudden changes.
 
-1. Open the notebook in Google Colab
-2. Upload the dataset
-3. Run all cells
+3. Final Risk Score
 
-📌 Conclusion
+Risk Score = 0.6 × Mahalanobis + 0.4 × EWMA
 
-The model successfully identifies anomalies and provides an explainable fraud detection mechanism without requiring labeled data.
+Transactions are classified into:
+
+- Low Risk
+- Medium Risk
+- High Risk
+
+📊 Dataset
+
+A finance-specific synthetic dataset was created with features such as:
+
+- Transaction amount
+- International transaction flag
+- Failed login count
+- Device change flag
+- New beneficiary flag
+- IP risk score
+
+📈 Results
+
+- Most transactions are low risk
+- A small number of transactions are flagged as high risk
+- The model successfully detects anomalous behavior patterns
+
+▶️ How to Run
+
+1. Open the notebook:
+   fraud_detection.ipynb
+
+2. Run all cells
+
+3. Use the interactive dropdown to select an account and analyze behavior
+
+📌 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+
+📎 Repository Link
+
+(Add your GitHub link here)
+
+👨‍💻 Contributors
+
+(Add your team member names)
