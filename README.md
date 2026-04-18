@@ -126,7 +126,7 @@ A **finance-specific synthetic dataset** was generated to simulate real-world ba
 
 The project includes an **interactive account-level analysis feature**:
 
-* Select an `account_id`
+* Choose an `account_id`
 * View:
 
   * transaction history
@@ -194,16 +194,20 @@ This helps in understanding **why a transaction is flagged as risky**.
  ┣ 📜 fraud_detection.ipynb
  ┣ 📜 financial_fraud_synthetic.csv
  ┣ 📜 README.md
+ ┣ 📜 Presentation-Fraud-Detection.pptx
+ ┣ 📜 Report_Fraud_detection.pdf
+ ┣ 📜 Presentation-Fraud-Detection(pdf).pdf
+
 ```
 
 ---
 
 ## ▶️ How to Run
 
-1. Open the notebook in **Google Colab** or Jupyter
+1. Open the notebook in **Google Colab** or Jupyter or VS Code with required extensions
 2. Upload the dataset
 3. Run all cells
-4. Use the dropdown to analyze specific accounts
+4. Choose account choice to analyze specific accounts
 
 ---
 
